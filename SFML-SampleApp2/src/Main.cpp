@@ -1,4 +1,10 @@
 #include <SFML/Graphics.hpp>
+#include <math.h>
+#include <iostream>
+
+#include "Segment.h"
+
+const float PI = 3.14159265359f;
 
 int main()
 {
@@ -20,11 +26,9 @@ int main()
         // clear the window with black color
         window.clear(sf::Color::Black);
 
-        // draw everything here...
-        sf::CircleShape shape(50.f);
-        shape.setFillColor(sf::Color(150, 50, 250));
-        window.draw(shape);
-        // window.draw(...);
+        Segment segment(150);
+        segment.draw(window);
+       
 
         // end the current frame
         window.display();
