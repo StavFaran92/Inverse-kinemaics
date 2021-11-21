@@ -1,8 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <math.h>
 #include <iostream>
+#include <array>
 
-#include "Segment.h"
+#include "Tentacle.h"
 
 const float PI = 3.14159265359f;
 
@@ -10,6 +11,8 @@ int main()
 {
     // create the window
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+
+    Tentacle tentacle(0, 0, 200, 5);
 
     // run the program as long as the window is open
     while (window.isOpen())
@@ -26,9 +29,9 @@ int main()
         // clear the window with black color
         window.clear(sf::Color::Black);
 
-        Segment segment(150);
-        segment.draw(window);
-       
+        tentacle.update(window);
+
+        tentacle.draw(window);
 
         // end the current frame
         window.display();

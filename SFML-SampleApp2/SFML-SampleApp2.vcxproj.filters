@@ -18,12 +18,18 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Segment.cpp">
+    <ClCompile Include="src\Segment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tentacle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Segment.h">
+    <ClInclude Include="src\Segment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tentacle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

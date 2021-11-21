@@ -56,6 +56,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SFML_DIR)\include;$(ProjectDir)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,11 +82,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Segment.cpp" />
+    <ClCompile Include="src\Segment.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="Tentacle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Segment.h" />
+    <ClInclude Include="src\Segment.h" />
+    <ClInclude Include="Tentacle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
